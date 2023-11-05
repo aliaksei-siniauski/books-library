@@ -1,0 +1,9 @@
+.header {
+  background: $header-color;
+}
+.header-container {
+  @extend %flex;
+  @extend %al-items-center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

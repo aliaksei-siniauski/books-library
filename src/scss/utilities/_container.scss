@@ -1,15 +1,5 @@
 .container {
-  max-width: 1440px;
+  max-width: 1430px;
+  padding-inline: 15px;
   margin: 0 auto;
-  padding-inline: $padding-inline;
-  @include media-desktop {
-    max-width: 100%;
-  }
-  @include media-tablet {
-    max-width: 768px;
-    padding-inline: $padding-inline-mb;
-  }
-  @include media-mobile {
-    padding-inline: 1.5rem;
-  }
 }

@@ -3,8 +3,8 @@ body {
   @extend %flex;
   @extend %flex-column;
   @extend %js-content-space-between;
-  @include font($fs-main, 3.6rem, 400);
   font-family: $ff-first;
+  font-size: 2rem;
   color: $light-color;
   background-color: $dark-color;
   position: relative;
