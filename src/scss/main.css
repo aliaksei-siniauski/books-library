@@ -19,6 +19,10 @@ body {
   align-items: center;
 }
 
+.nav__item:hover {
+  transition: 0.5s ease-in-out;
+}
+
 /* Vendors */
 html {
   line-height: 1.15; /* 1 */
@@ -493,6 +497,9 @@ article {
 
 .nav__item {
   padding: 0 15px;
+}
+.nav__item:hover {
+  color: #bb945f;
 }
 
 .header-nav {

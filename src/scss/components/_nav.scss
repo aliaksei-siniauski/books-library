@@ -4,6 +4,10 @@
 
 .nav__item {
   padding: 0 15px;
+  &:hover {
+    color: $active-coor;
+    @extend %transition;
+  }
 }
 
 .header-nav {
