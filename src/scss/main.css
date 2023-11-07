@@ -2,7 +2,8 @@
 /* Family */
 /* Fonts */
 /* Meida quaries */
-.header-container, .nav, body {
+.social-list, .footer-copyright, .footer-top,
+.footer-bottom, .header-container, .nav, body {
   display: flex;
 }
 
@@ -10,15 +11,16 @@ body {
   flex-direction: column;
 }
 
-body {
+.footer-copyright, .footer-top,
+.footer-bottom, body {
   justify-content: space-between;
 }
 
-.header-container {
+.footer-copyright, .footer-bottom, .header-container {
   align-items: center;
 }
 
-h3 {
+.title, h3 {
   text-align: center;
 }
 
@@ -342,7 +344,7 @@ body {
   font-family: "Inter";
   font-size: 2rem;
   color: #ffffff;
-  background-color: #000000;
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -501,13 +503,6 @@ h2 {
   letter-spacing: 2px;
   color: #0c0c0e;
 }
-h2:before {
-  display: block;
-  width: 50px;
-  height: 1px;
-  content: "";
-  background: #0c0c0e;
-}
 
 h3 {
   font-size: 2rem;
@@ -531,6 +526,15 @@ h4 {
   max-width: 1430px;
   padding-inline: 15px;
   margin: 0 auto;
+}
+
+.title::after {
+  display: block;
+  width: 50px;
+  height: 1px;
+  content: "";
+  margin: 20px auto 0;
+  background: #0c0c0e;
 }
 
 /* Components */
@@ -565,6 +569,54 @@ h4 {
 .header-container {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.footer {
+  background: #0c0c0e;
+}
+
+.footer-container {
+  padding: 20px 0 35px;
+}
+
+.footer-main {
+  border-bottom: #ffffff 1px solid;
+  padding: 0 0 38px 0;
+}
+
+.footer-addres {
+  max-width: 230px;
+}
+
+.footer-addres,
+.footer-info {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-info {
+  max-width: 150px;
+  text-align: right;
+}
+
+.footer-bottom {
+  padding: 10px 0 0;
+  line-height: 2rem;
+}
+
+.footer-copyright {
+  padding: 44px 0 0;
+  line-height: 2rem;
+}
+
+.social-list {
+  gap: 15px;
+}
+
+.footer-user {
+  line-height: 4rem;
 }
 
 /*# sourceMappingURL=main.css.map */

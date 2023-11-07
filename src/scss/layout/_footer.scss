@@ -1,0 +1,51 @@
+.footer {
+  background: $header-color;
+}
+.footer-container {
+  padding: 20px 0 35px;
+}
+
+.footer-main {
+  border-bottom: $light-color 1px solid;
+  padding: 0 0 38px 0;
+}
+
+.footer-top,
+.footer-bottom {
+  @extend %flex;
+  @extend %js-content-space-between;
+}
+.footer-addres {
+  max-width: 230px;
+}
+.footer-addres,
+.footer-info {
+  @include font(1.5rem, 2rem, 400);
+}
+
+.footer-info {
+  max-width: 150px;
+  text-align: right;
+}
+.footer-bottom {
+  @extend %al-items-center;
+  padding: 10px 0 0;
+  line-height: 2rem;
+}
+
+.footer-copyright {
+  @extend %flex;
+  @extend %js-content-space-between;
+  @extend %al-items-center;
+  padding: 44px 0 0;
+  line-height: 2rem;
+}
+
+.social-list {
+  @extend %flex;
+  gap: 15px;
+}
+
+.footer-user {
+  line-height: 4rem;
+}
