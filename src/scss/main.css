@@ -3,7 +3,7 @@
 /* Fonts */
 /* Meida quaries */
 .social-list, .footer-copyright, .footer-top,
-.footer-bottom, .header-container, .nav, body {
+.footer-bottom, .header-container, .nav, .slider-controls, .slider-line, body {
   display: flex;
 }
 
@@ -20,15 +20,15 @@ body {
   align-items: center;
 }
 
-.title, h3 {
+.nav__item, .control {
+  cursor: pointer;
+}
+
+.subtitle, .title, h3 {
   text-align: center;
 }
 
-h4, h2 {
-  text-transform: uppercase;
-}
-
-.nav__item:hover {
+.nav__item:hover, .control {
   transition: 0.5s ease-in-out;
 }
 
@@ -343,6 +343,7 @@ body {
   min-height: 100vh;
   font-family: "Inter";
   font-size: 2rem;
+  line-height: 4rem;
   color: #ffffff;
   background: #ffffff;
   position: relative;
@@ -495,12 +496,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   line-height: 4rem;
   font-weight: 400;
   font-style: normal;
   font-family: "Forum";
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   color: #0c0c0e;
 }
 
@@ -537,12 +538,48 @@ h4 {
   background: #0c0c0e;
 }
 
+.subtitle {
+  color: #000000;
+  padding: 40px 0 0;
+}
+
 /* Components */
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+  max-width: 1400px;
+  padding: 20px 0 0;
+  overflow: hidden;
+}
+
+.slider-line {
+  gap: 25px;
+}
+
+.slider-controls {
+  max-width: 68px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.control {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #000000;
+}
+.control--active {
+  background: #bb945f;
+}
+
 .icon {
   display: inline-block;
 }
 
 .icon-user {
+  display: block;
   width: 30px;
   height: 30px;
   background: url("../icons/icon-user.svg");
@@ -569,6 +606,10 @@ h4 {
 .header-container {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.about-container {
+  padding: 20px 0 40px;
 }
 
 .footer {

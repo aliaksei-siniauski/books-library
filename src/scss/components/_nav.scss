@@ -4,8 +4,9 @@
 
 .nav__item {
   padding: 0 15px;
+  @extend %cursor-pointer;
   &:hover {
-    color: $active-coor;
+    color: $active-color;
     @extend %transition;
   }
 }

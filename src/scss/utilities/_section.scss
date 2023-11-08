@@ -9,3 +9,9 @@
     background: $header-color;
   }
 }
+
+.subtitle {
+  color: $dark-color;
+  @extend %text-center;
+  padding: 40px 0 0;
+}
