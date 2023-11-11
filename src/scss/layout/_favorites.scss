@@ -1,0 +1,71 @@
+.favorites-container {
+  padding: 4rem 0;
+}
+
+.book-order__pick {
+  font-weight: 700;
+}
+
+.book-order__form {
+}
+
+.book__seasons {
+  @extend %flex;
+}
+
+.book-order__pick-active {
+  font-weight: 700;
+}
+
+%book-card__description {
+  @include font(1.5rem, 4rem, 400);
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+
+.book-order__inner {
+  @extend %flex;
+  flex-direction: column;
+  gap: 4rem 0;
+}
+
+.book-order__cards {
+  @extend %flex;
+  @extend %flex-wrap;
+  @extend %js-content-space-between;
+  gap: 40px 0;
+}
+
+.book-order__card {
+  position: relative;
+  max-width: 550px;
+  width: 100%;
+  border: 1px solid $dark-color;
+  padding: 15px 0 15px 20px;
+}
+
+.book-order__staff {
+  @extend %book-card__description;
+  font-size: 2rem;
+  font-family: $ff-second;
+  &::after {
+    content: "";
+    display: block;
+
+    width: 50px;
+    height: 1px;
+    background: $header-color;
+  }
+}
+
+.book-order__description {
+  max-width: 355px;
+  width: 100%;
+  @extend %book-card__description;
+}
+
+.book-order__img {
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+}

@@ -1,0 +1,20 @@
+.button {
+  padding: 9px 27px;
+  background: transparent;
+  color: $header-color;
+  font-family: $ff-main, "Verdana";
+  @include font(1rem, normal, 700);
+  @extend %text-center;
+  letter-spacing: 0.1rem;
+  border: 1px solid $dark-color;
+  @extend %cursor-pointer;
+  @extend %transition;
+  &:hover {
+    border-color: $active-color;
+    color: $active-color;
+  }
+  %--active {
+    border-color: $active-color;
+    color: $active-color;
+  }
+}

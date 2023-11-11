@@ -13,13 +13,6 @@ h2 {
 }
 
 h3 {
-  @include font(2rem, 4rem, 700);
-  font-weight: 700;
-  @extend %text-center;
-}
-
-h4 {
-  @include font(1.5rem, 4rem, 400);
+  @include font(1.5rem, 4rem, 700);
   letter-spacing: 2px;
-  color: $dark-color;
 }

@@ -3,8 +3,12 @@
 /* Fonts */
 /* Meida quaries */
 .social-list, .footer-copyright, .footer-top,
-.footer-bottom, .header-container, .nav, .slider-controls, .slider-line, body {
+.footer-bottom, .book-order__cards, .book-order__inner, .book__seasons, .header-container, .nav, .slider-controls, .slider-line, body {
   display: flex;
+}
+
+.book-order__cards {
+  flex-wrap: wrap;
 }
 
 body {
@@ -12,7 +16,7 @@ body {
 }
 
 .footer-copyright, .footer-top,
-.footer-bottom, body {
+.footer-bottom, .book-order__cards, body {
   justify-content: space-between;
 }
 
@@ -20,15 +24,15 @@ body {
   align-items: center;
 }
 
-.nav__item, .control {
+.button, .nav__item, .control {
   cursor: pointer;
 }
 
-.subtitle, .title, h3 {
+.button, .subtitle, .title {
   text-align: center;
 }
 
-.nav__item:hover, .control {
+.button, .nav__item:hover, .control {
   transition: 0.5s ease-in-out;
 }
 
@@ -344,7 +348,7 @@ body {
   font-family: "Inter";
   font-size: 2rem;
   line-height: 4rem;
-  color: #ffffff;
+  color: #000000;
   background: #ffffff;
   position: relative;
   overflow: hidden;
@@ -506,23 +510,12 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
-  line-height: 4rem;
-  font-weight: 700;
-  font-style: normal;
-  font-weight: 700;
-}
-
-h4 {
   font-size: 1.5rem;
   line-height: 4rem;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   letter-spacing: 2px;
-  color: #000000;
-}
-
-/*Utilities  */
+} /*Utilities  */
 .container {
   max-width: 1430px;
   padding-inline: 15px;
@@ -596,8 +589,25 @@ h4 {
 
 .header-nav {
   margin: 0 25px 0 auto;
+  color: #ffffff;
 }
 
+.button {
+  padding: 9px 27px;
+  background: transparent;
+  color: #0c0c0e;
+  font-family: "Inter", "Verdana";
+  font-size: 1rem;
+  line-height: normal;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+  border: 1px solid #000000;
+}
+.button:hover {
+  border-color: #bb945f;
+  color: #bb945f;
+}
 /* Layout  */
 .header {
   background: #0c0c0e;
@@ -608,12 +618,74 @@ h4 {
   padding-bottom: 20px;
 }
 
+.favorites-container {
+  padding: 4rem 0;
+}
+
+.book-order__pick {
+  font-weight: 700;
+}
+
+.book-order__pick-active {
+  font-weight: 700;
+}
+
+.book-order__description, .book-order__staff {
+  font-size: 1.5rem;
+  line-height: 4rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+
+.book-order__inner {
+  flex-direction: column;
+  gap: 4rem 0;
+}
+
+.book-order__cards {
+  gap: 40px 0;
+}
+
+.book-order__card {
+  position: relative;
+  max-width: 550px;
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 15px 0 15px 20px;
+}
+
+.book-order__staff {
+  font-size: 2rem;
+  font-family: "Forum";
+}
+.book-order__staff::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #0c0c0e;
+}
+
+.book-order__description {
+  max-width: 355px;
+  width: 100%;
+}
+
+.book-order__img {
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+}
+
 .about-container {
   padding: 20px 0 40px;
 }
 
 .footer {
   background: #0c0c0e;
+  color: #ffffff;
 }
 
 .footer-container {
