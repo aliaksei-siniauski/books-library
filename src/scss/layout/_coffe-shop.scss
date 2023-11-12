@@ -1,0 +1,61 @@
+.coffe-subtitle {
+  letter-spacing: 0.2rem;
+}
+
+.menu-container {
+  @extend %flex;
+  @extend %js-content-space-between;
+}
+
+.drinks {
+  max-width: 438px;
+  width: 100%;
+}
+
+.menu-name {
+  color: $active-color;
+}
+
+.menu-items {
+  @extend %flex;
+  @extend %flex-column;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0 0;
+}
+
+.menu-item {
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %js-content-space-between;
+  gap: 60px;
+}
+
+.menu-item__price {
+  font-family: $ff-second;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+
+.menu-item__line {
+  width: 100px;
+  height: 1px;
+  background: $active-color;
+}
+
+.deserts {
+  max-width: 482px;
+  width: 100%;
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+}
+
+.deserts-items {
+  align-items: flex-end;
+}
+
+.drinks-item__title {
+  max-width: 196px;
+  width: 100%;
+}

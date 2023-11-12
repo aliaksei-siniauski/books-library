@@ -3,7 +3,7 @@
 /* Fonts */
 /* Meida quaries */
 .social-list, .footer-copyright, .footer-top,
-.footer-bottom, .book-order__cards, .book-order__inner, .book__seasons, .header-container, .nav, .slider-controls, .slider-line, body {
+.footer-bottom, .staff-info, .call-info, .contacts-info, .contacts-container, .deserts, .menu-item, .menu-items, .menu-container, .book-order__cards, .book-order__inner, .book__seasons, .header-container, .nav, .slider-controls, .slider-line, body {
   display: flex;
 }
 
@@ -11,16 +11,16 @@
   flex-wrap: wrap;
 }
 
-body {
+.staff-info, .call-info, .contacts-info, .deserts, .menu-items, body {
   flex-direction: column;
 }
 
 .footer-copyright, .footer-top,
-.footer-bottom, .book-order__cards, body {
+.footer-bottom, .contacts-container, .menu-item, .menu-container, .book-order__cards, body {
   justify-content: space-between;
 }
 
-.footer-copyright, .footer-bottom, .header-container {
+.footer-copyright, .footer-bottom, .deserts, .menu-item, .header-container {
   align-items: center;
 }
 
@@ -518,7 +518,9 @@ h3 {
 } /*Utilities  */
 .container {
   max-width: 1430px;
+  padding-top: 20px;
   padding-inline: 15px;
+  padding-bottom: 40px;
   margin: 0 auto;
 }
 
@@ -618,10 +620,6 @@ h3 {
   padding-bottom: 20px;
 }
 
-.favorites-container {
-  padding: 4rem 0;
-}
-
 .book-order__pick {
   font-weight: 700;
 }
@@ -679,8 +677,82 @@ h3 {
   right: -30px;
 }
 
-.about-container {
-  padding: 20px 0 40px;
+.coffe-subtitle {
+  letter-spacing: 0.2rem;
+}
+
+.drinks {
+  max-width: 438px;
+  width: 100%;
+}
+
+.menu-name {
+  color: #bb945f;
+}
+
+.menu-items {
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0 0;
+}
+
+.menu-item {
+  gap: 60px;
+}
+
+.menu-item__price {
+  font-family: "Forum";
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+
+.menu-item__line {
+  width: 100px;
+  height: 1px;
+  background: #bb945f;
+}
+
+.deserts {
+  max-width: 482px;
+  width: 100%;
+}
+
+.deserts-items {
+  align-items: flex-end;
+}
+
+.drinks-item__title {
+  max-width: 196px;
+  width: 100%;
+}
+
+.contacts-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contacts-info {
+  gap: 40px;
+}
+
+.call-info {
+  gap: 20px;
+  padding: 40px 0 0;
+}
+
+.contact-call {
+  color: #000000;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+
+.staff-info {
+  gap: 20px;
+}
+
+.staff-position {
+  font-weight: 400;
 }
 
 .footer {
@@ -689,7 +761,7 @@ h3 {
 }
 
 .footer-container {
-  padding: 20px 0 35px;
+  padding-bottom: 35px;
 }
 
 .footer-main {
