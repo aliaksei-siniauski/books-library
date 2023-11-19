@@ -629,6 +629,34 @@ h4 {
   padding-bottom: 20px;
 }
 
+.hero {
+  background: url("/src/images/bg.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-container {
+  padding: 220px 0 160px;
+}
+
+.hero-content {
+  max-width: 600px;
+  width: 100%;
+  background: #000000;
+}
+
+.hero-content__title {
+  max-width: 520px;
+  width: 100%;
+  padding: 35px 40px;
+  color: #ffffff;
+  line-height: 5rem;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .book-order__pick {
   font-weight: 700;
 }
