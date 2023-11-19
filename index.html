@@ -82,7 +82,7 @@
           <div class="book-order">
             <div class="book-order__inner">
               <div class="book-order__picks">
-                <form action="/" class="book-order__form">
+                <!--  <form action="/" class="book-order__form">
                   <p class="book-order__pick">Pick favorites of season</p>
                   <div class="book__seasons">
                     <input
@@ -91,6 +91,7 @@
                       id="winter"
                       value="Winter"
                       checked
+                      class="book__season"
                     />
                     <label for="winter" class="book-order__pick-active"
                       >Winter</label
@@ -100,6 +101,7 @@
                       name="fav-season"
                       id="spring"
                       value="Spring"
+                      class="book__season"
                     />
                     <label for="spring">Spring</label>
                     <input
@@ -107,6 +109,7 @@
                       name="fav-season"
                       id="summer"
                       value="Summer"
+                      class="book__season"
                     />
                     <label for="summer">Summer</label>
                     <input
@@ -114,10 +117,36 @@
                       name="fav-season"
                       id="autumn"
                       value="Autumn"
+                      class="book__season"
                     />
                     <label for="autumn">Autumn</label>
                   </div>
-                </form>
+                </form> -->
+                <div class="book-radio-list">
+                  <p class="book-radio__title">Pick favorites of season</p>
+                  <div class="book-radio-content">
+                    <div class="book-radio-item">
+                      <input name="radio" id="winter" / type="radio">
+                      <label
+                        class="radio-label radio-label--active"
+                        for="winter"
+                        >Winter</label
+                      >
+                    </div>
+                    <div class="book-radio-item">
+                      <input name="radio" id="spring" / type="radio">
+                      <label class="radio-label" for="spring">Spring</label>
+                    </div>
+                    <div class="book-radio-item">
+                      <input name="radio" id="summer" / type="radio">
+                      <label class="radio-label" for="summer">Summer</label>
+                    </div>
+                    <div class="book-radio-item">
+                      <input name="radio" id="autumn" / type="radio">
+                      <label class="radio-label" for="autumn">Autumn</label>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="book-order__cards">
                 <div class="book-order__card">
