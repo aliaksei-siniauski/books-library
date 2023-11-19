@@ -3,7 +3,7 @@
 /* Fonts */
 /* Meida quaries */
 .social-list, .footer-copyright, .footer-top,
-.footer-bottom, .staff-info, .call-info, .contacts-info, .contacts-container, .deserts, .menu-item, .menu-items, .menu-container, .book-order__cards, .book-order__inner, .book__seasons, .header-container, .nav, .slider-controls, .slider-line, body {
+.footer-bottom, .reader-card, .library-card__info, .library-card__inner, .card-container, .staff-info, .call-info, .contacts-info, .contacts-container, .deserts, .menu-item, .menu-items, .menu-container, .book-order__cards, .book-order__inner, .book__seasons, .header-container, .nav, .slider-controls, .slider-line, body {
   display: flex;
 }
 
@@ -11,12 +11,12 @@
   flex-wrap: wrap;
 }
 
-.staff-info, .call-info, .contacts-info, .deserts, .menu-items, body {
+.reader-card, .library-card__info, .library-card__inner, .staff-info, .call-info, .contacts-info, .deserts, .menu-items, body {
   flex-direction: column;
 }
 
 .footer-copyright, .footer-top,
-.footer-bottom, .contacts-container, .menu-item, .menu-container, .book-order__cards, body {
+.footer-bottom, .card-container, .contacts-container, .menu-item, .menu-container, .book-order__cards, body {
   justify-content: space-between;
 }
 
@@ -510,12 +510,21 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  line-height: normal;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 2rem;
   line-height: 4rem;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 2px;
-} /*Utilities  */
+  letter-spacing: 0.2rem;
+}
+
+/*Utilities  */
 .container {
   max-width: 1430px;
   padding-top: 20px;
@@ -663,7 +672,11 @@ h3 {
   display: block;
   width: 50px;
   height: 1px;
-  background: #0c0c0e;
+  background: #bb945f;
+}
+
+.book-order__title {
+  font-size: 1.5rem;
 }
 
 .book-order__description {
@@ -753,6 +766,79 @@ h3 {
 
 .staff-position {
   font-weight: 400;
+}
+
+.library-card {
+  max-width: 600px;
+  width: 100%;
+}
+
+.library-card__title {
+  margin-bottom: 20px;
+}
+
+.library-card__name {
+  margin-bottom: 30px;
+}
+
+.library-card__inner {
+  padding: 20px 20px 30px;
+  border: 3px solid #bb945f;
+  gap: 20px;
+}
+
+.library-card__info {
+  max-width: 560px;
+  width: 100%;
+  background: #bb945f;
+  line-height: 5rem;
+  padding: 20px 20px 25px;
+}
+
+.library-card__name {
+  font-family: "Forum";
+}
+
+.reader-card {
+  gap: 35px;
+  text-align: right;
+  max-width: 456px;
+  width: 100%;
+}
+
+.reader-card__text {
+  line-height: 4rem;
+  letter-spacing: 0.04rem;
+}
+
+.reader-card__title {
+  font-family: "Forum";
+}
+
+.card__input {
+  background: #ffffff;
+  border-radius: 1rem;
+  border: 0;
+  padding: 8px 0 8px 20px;
+  color: #8e8e8e;
+  font-size: 3rem;
+  line-height: 5rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Forum";
+  letter-spacing: 0.6px;
+}
+.card__input::-moz-placeholder {
+  color: #8e8e8e;
+}
+
+.card__input:first-of-type {
+  margin-bottom: 25px;
+}
+
+.card__button {
+  margin: 0 auto;
+  padding: 10px 40px;
 }
 
 .footer {

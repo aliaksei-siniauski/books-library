@@ -1,0 +1,78 @@
+.card-container {
+  @extend %flex;
+  @extend %js-content-space-between;
+}
+.library-card {
+  max-width: 600px;
+  width: 100%;
+}
+.library-card__title {
+  margin-bottom: 20px;
+}
+
+.library-card__name {
+  margin-bottom: 30px;
+}
+
+.library-card__inner {
+  @extend %flex;
+  @extend %flex-column;
+  padding: 20px 20px 30px;
+  border: 3px solid $active-color;
+  gap: 20px;
+}
+
+.library-card__info {
+  max-width: 560px;
+  width: 100%;
+  @extend %flex;
+  @extend %flex-column;
+  background: $active-color;
+  line-height: 5rem;
+  padding: 20px 20px 25px;
+}
+
+.library-card__name {
+  font-family: $ff-second;
+}
+
+.reader-card {
+  @extend %flex;
+  @extend %flex-column;
+  gap: 35px;
+  text-align: right;
+  max-width: 456px;
+  width: 100%;
+}
+
+.reader-card__text {
+  line-height: 4rem;
+  letter-spacing: 0.04rem;
+}
+
+.reader-card__title {
+  font-family: $ff-second;
+}
+
+.card__input {
+  background: $light-color;
+  border-radius: 1rem;
+  border: 0;
+  padding: 8px 0 8px 20px;
+  color: #8e8e8e;
+  @include font(3rem, 5rem, 400);
+  font-family: $ff-second;
+  letter-spacing: 0.6px;
+  &::-moz-placeholder {
+    color: $input-color;
+  }
+}
+
+.card__input:first-of-type {
+  margin-bottom: 25px;
+}
+
+.card__button {
+  margin: 0 auto;
+  padding: 10px 40px;
+}
