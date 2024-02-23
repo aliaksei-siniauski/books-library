@@ -1,9 +1,10 @@
 /* Abstracts */ /* Color */
 /* Family */
+/* Width */
 /* Fonts */
 /* Meida quaries */
 .social-list, .footer-copyright, .footer-top,
-.footer-bottom, .reader-card, .library-card__info, .library-card__inner, .card-container, .staff-info, .call-info, .contacts-info, .contacts-container, .deserts, .menu-item, .menu-items, .menu-container, .book-radio-item, .book-radio-content, .book-order__cards, .book-order__inner, .book__seasons, .header-container, .nav, .slider-controls, .slider-line, body {
+.footer-bottom, .reader-card, .library-card__info, .library-card__inner, .card-container, .staff-info, .call-info, .contacts-info, .contacts-container, .deserts, .menu-item, .menu-items, .menu-container, .book-radio-item, .book-radio-content, .book-order__cards, .book-order__inner, .book__seasons, .header-container, .nav.open, .nav, .slider-controls, .slider-line, body {
   display: flex;
 }
 
@@ -11,7 +12,7 @@
   flex-wrap: wrap;
 }
 
-.reader-card, .library-card__info, .library-card__inner, .staff-info, .call-info, .contacts-info, .deserts, .menu-items, body {
+.reader-card, .library-card__info, .library-card__inner, .staff-info, .call-info, .contacts-info, .deserts, .menu-items, .nav.open, body {
   flex-direction: column;
 }
 
@@ -24,7 +25,7 @@
   align-items: center;
 }
 
-.button, .nav__item, .control {
+.hamburger, .button, .nav__item, .icon-user, .control {
   cursor: pointer;
 }
 
@@ -32,7 +33,7 @@
   text-align: center;
 }
 
-.button, .nav__item:hover, .control {
+.button, .nav__item:hover, .control:hover, .control {
   transition: 0.5s ease-in-out;
 }
 
@@ -574,6 +575,9 @@ h4 {
   border-radius: 50%;
   background: #000000;
 }
+.control:hover {
+  background: #bb945f;
+}
 .control--active {
   background: #bb945f;
 }
@@ -589,6 +593,25 @@ h4 {
   background: url("../icons/icon-user.svg");
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 100;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+}
+.nav.open {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 332px;
+  max-height: 540px;
+  z-index: 1;
+  background: #000000;
 }
 
 .nav__item {
@@ -619,6 +642,54 @@ h4 {
   border-color: #bb945f;
   color: #bb945f;
 }
+.hamburger__line, .hamburger:after, .hamburger:before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.header-hamburger {
+  margin-left: 20px;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 45px;
+  height: 20px;
+  user-select: none;
+  z-index: 100;
+}
+.hamburger.open::before {
+  transform: rotate(-45deg) translate(-2px, 8px);
+}
+.hamburger.open::after {
+  transform: rotate(45deg) translate(-6px, -10px);
+}
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+}
+.hamburger:before {
+  top: 0;
+  left: 0;
+}
+.hamburger:after {
+  bottom: 0;
+  left: 0;
+}
+
+.hamburger__line {
+  top: calc(50% - 1.5px);
+}
+.hamburger__line.open {
+  display: none;
+}
+
 /* Layout  */
 .header {
   background: #0c0c0e;
@@ -630,7 +701,7 @@ h4 {
 }
 
 .hero {
-  background-image: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url("/src/images/bg.jpg");
+  background-image: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url("../images/bg.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -755,9 +826,9 @@ h4 {
   border-color: #000000;
 }
 .book-radio-item [type=radio]:disabled + .radio-label:before {
-  box-shadow: inset 0 0 0 4px #f4f4f4;
-  border-color: #b4b4b4;
-  background: #b4b4b4;
+  box-shadow: inset 0 0 0 4px #ffffff;
+  border-color: #bfbfbf;
+  background: #bfbfbf;
 }
 .book-radio-item [type=radio] + .radio-label:empty:before {
   margin-right: 0;

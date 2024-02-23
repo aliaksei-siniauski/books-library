@@ -1,5 +1,21 @@
 .nav {
   @extend %flex;
+  @include media-laptop {
+    display: none;
+  }
+  &.open {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 332px;
+    max-height: 540px;
+    @extend %flex;
+    @extend %flex-column;
+    z-index: 1;
+    background: $dark-color;
+  }
 }
 
 .nav__item {

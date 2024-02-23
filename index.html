@@ -12,7 +12,7 @@
         <h1 class="header-logo">
           <a href="index.html">Brooklyn Public Library</a>
         </h1>
-        <nav class="header-nav">
+        <nav class="header-nav open">
           <ul class="nav">
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
@@ -34,6 +34,9 @@
         <!-- close nav -->
         <div class="user">
           <span class="icon icon-user"></span>
+        </div>
+        <div class="hamburger header-hamburger">
+          <span class="hamburger__line"></span>
         </div>
         <!-- close user -->
       </div>
@@ -82,46 +85,6 @@
           <div class="book-order">
             <div class="book-order__inner">
               <div class="book-order__picks">
-                <!--  <form action="/" class="book-order__form">
-                  <p class="book-order__pick">Pick favorites of season</p>
-                  <div class="book__seasons">
-                    <input
-                      type="radio"
-                      name="fav-season"
-                      id="winter"
-                      value="Winter"
-                      checked
-                      class="book__season"
-                    />
-                    <label for="winter" class="book-order__pick-active"
-                      >Winter</label
-                    >
-                    <input
-                      type="radio"
-                      name="fav-season"
-                      id="spring"
-                      value="Spring"
-                      class="book__season"
-                    />
-                    <label for="spring">Spring</label>
-                    <input
-                      type="radio"
-                      name="fav-season"
-                      id="summer"
-                      value="Summer"
-                      class="book__season"
-                    />
-                    <label for="summer">Summer</label>
-                    <input
-                      type="radio"
-                      name="fav-season"
-                      id="autumn"
-                      value="Autumn"
-                      class="book__season"
-                    />
-                    <label for="autumn">Autumn</label>
-                  </div>
-                </form> -->
                 <div class="book-radio-list">
                   <p class="book-radio__title">Pick favorites of season</p>
                   <div class="book-radio-content">
@@ -455,5 +418,6 @@
       </div>
       <!-- close footer-container -->
     </footer>
+    <script type="module" src="src/index.js"></script>
   </body>
 </html>
