@@ -30,4 +30,7 @@
   letter-spacing: 0.3px;
   text-transform: uppercase;
   text-align: center;
+  @include media-mobile-big {
+    line-height: 4rem;
+  }
 }

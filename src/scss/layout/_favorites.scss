@@ -1,5 +1,6 @@
 .book-radio__title {
   font-weight: 700;
+  padding: 0 0 4rem 0;
 }
 
 .book__seasons {
@@ -19,7 +20,7 @@
 .book-order__inner {
   @extend %flex;
   flex-direction: column;
-  gap: 4rem 0;
+  gap: 40px 0;
 }
 
 .book-order__cards {
@@ -27,6 +28,9 @@
   @extend %flex-wrap;
   @extend %js-content-space-between;
   gap: 40px 0;
+  @include media-tablet {
+    justify-content: center;
+  }
 }
 
 .book-order__card {
@@ -52,6 +56,9 @@
 
 .book-order__title {
   font-size: 1.5rem;
+  @include media-mobile-big {
+    font-size: 1.2rem;
+  }
 }
 
 .book-order__description {
@@ -69,11 +76,17 @@
 .book-radio-content {
   @extend %flex;
   gap: 90px;
+  @include media-mobile-big {
+    gap: 12px;
+  }
 }
 
 .book-radio-item {
   @extend %flex;
   gap: 20px;
+  @include media-mobile-big {
+    display: ruby;
+  }
 }
 
 .book-radio-item [type="radio"] {
@@ -95,6 +108,9 @@
       cursor: pointer;
       text-align: center;
       transition: all 250ms ease;
+      @include media-mobile-big {
+        margin-right: 0.2em;
+      }
     }
   }
   &:checked {

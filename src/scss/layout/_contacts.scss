@@ -3,12 +3,25 @@
   @extend %js-content-space-between;
   padding-top: 40px;
   padding-bottom: 40px;
+  @include media-tablet {
+    flex-direction: column;
+    gap: 100px;
+  }
+  @include media-mobile-big {
+    gap: 50px;
+  }
 }
 
 .contacts-info {
   @extend %flex;
   @extend %flex-column;
   gap: 40px;
+  @include media-tablet {
+    text-align: center;
+  }
+  @include media-mobile-big {
+    gap: 25px;
+  }
 }
 
 .call-info {
@@ -16,8 +29,16 @@
   @extend %flex-column;
   gap: 20px;
   padding: 40px 0 0;
+  @include media-mobile-big {
+    gap: 10px;
+  }
 }
 
+.contacts-map {
+  @include media-tablet {
+    margin: 0 auto;
+  }
+}
 .contact-call {
   color: $dark-color;
   font-weight: 400;

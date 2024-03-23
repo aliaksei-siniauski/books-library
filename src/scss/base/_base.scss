@@ -10,6 +10,9 @@ body {
   background: $light-color;
   position: relative;
   overflow: hidden;
+  @include media-mobile-big {
+    font-size: 2vh;
+  }
 }
 
 .overlay {

@@ -18,16 +18,23 @@
 }
 .footer-addres {
   max-width: 230px;
+  @include media-mobile-big {
+    max-width: 180px;
+  }
 }
 .footer-addres,
 .footer-info {
   @include font(1.5rem, 2rem, 400);
+  @include media-mobile-big {
+    font-size: 1.5vh;
+  }
 }
 
 .footer-info {
   max-width: 150px;
   text-align: right;
 }
+
 .footer-bottom {
   @extend %al-items-center;
   padding: 10px 0 0;
@@ -40,6 +47,9 @@
   @extend %al-items-center;
   padding: 44px 0 0;
   line-height: 2rem;
+  @include media-mobile-big {
+    font-size: 1.5vh;
+  }
 }
 
 .social-list {

@@ -21,12 +21,12 @@
 /* Meida quaries */
 
 @mixin media-mobile-small {
-  @media (max-width: $mobile-width-small) {
+  @media (max-width: $mobile-small-width) {
     @content;
   }
 }
 @mixin media-mobile-big {
-  @media (max-width: $mobile-width-big) {
+  @media (max-width: $mobile-big-width) {
     @content;
   }
 }

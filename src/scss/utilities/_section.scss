@@ -1,5 +1,6 @@
 .title {
   @extend %text-center;
+  padding: 0 0 4rem 0;
   &::after {
     display: block;
     width: 50px;
@@ -8,10 +9,12 @@
     margin: 20px auto 0;
     background: $header-color;
   }
+  @include media-mobile-big {
+    padding-bottom: 2rem;
+  }
 }
 
 .subtitle {
   color: $dark-color;
   @extend %text-center;
-  padding: 40px 0 0;
 }
