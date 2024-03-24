@@ -65,19 +65,29 @@
   max-width: 355px;
   width: 100%;
   @extend %book-card__description;
+  @include media-mobile-big {
+    max-width: 220px;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 }
 
 .book-order__img {
   position: absolute;
   bottom: 0;
   right: -30px;
+  @include media-mobile-big {
+    right: 0px;
+    max-width: 30%;
+  }
 }
 
 .book-radio-content {
   @extend %flex;
   gap: 90px;
   @include media-mobile-big {
-    gap: 12px;
+    justify-content: space-between;
+    gap: 10px;
   }
 }
 
@@ -109,7 +119,7 @@
       text-align: center;
       transition: all 250ms ease;
       @include media-mobile-big {
-        margin-right: 0.2em;
+        margin-right: 2px;
       }
     }
   }

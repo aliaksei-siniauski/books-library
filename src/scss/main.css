@@ -506,7 +506,7 @@ h1 {
 }
 @media (max-width: 440px) {
   h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -860,11 +860,24 @@ h4 {
   max-width: 355px;
   width: 100%;
 }
+@media (max-width: 440px) {
+  .book-order__description {
+    max-width: 220px;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
 
 .book-order__img {
   position: absolute;
   bottom: 0;
   right: -30px;
+}
+@media (max-width: 440px) {
+  .book-order__img {
+    right: 0px;
+    max-width: 30%;
+  }
 }
 
 .book-radio-content {
@@ -872,7 +885,8 @@ h4 {
 }
 @media (max-width: 440px) {
   .book-radio-content {
-    gap: 12px;
+    justify-content: space-between;
+    gap: 10px;
   }
 }
 
@@ -907,7 +921,7 @@ h4 {
 }
 @media (max-width: 440px) {
   .book-radio-item [type=radio] + .radio-label:before {
-    margin-right: 0.2em;
+    margin-right: 2px;
   }
 }
 .book-radio-item [type=radio]:checked + .radio-label:before {
